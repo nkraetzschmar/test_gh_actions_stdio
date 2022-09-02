@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      TEST_ARCH: ${{ matrix.arch == "amd64" && "c6g.medium" || ( matrix.arch == "arm64" && "c5.medium" ) || "default" }}
+      TEST_ARCH: ${{ matrix.arch == amd64 && "c6g.medium" || ( matrix.arch == arm64 && "c5.medium" ) || "default" }}
     
     strategy:
       matrix:
